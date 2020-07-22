@@ -13,7 +13,9 @@
             <div class="col s8 offset-s2">
                 <div class="content" id="mainTopic">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus blanditiis cumque officiis, sed amet quisquam ducimus temporibus aliquam aspernatur culpa nostrum provident molestias sunt vero dolore fugiat! Deserunt facere dolore ut explicabo omnis quibusdam cumque eaque exercitationem eius rem assumenda eum, impedit amet laboriosam ad expedita, mollitia obcaecati porro sapiente hic quam, aliquam veniam. At expedita voluptas alias sequi deserunt in nobis, commodi obcaecati, deleniti fuga quos error reiciendis. Error cumque aliquam quisquam animi in ratione possimus similique impedit fugit harum, dolores ut autem quo quaerat laudantium, nostrum corrupti ab consectetur placeat tempora? Excepturi fugiat delectus id incidunt sit!
+                        El plano inclinado es una máquina simple que consiste en una superficie plana que forma un ángulo con respecto a la horizontal. Su finalidad es reducir el esfuerzo requerido para elevar un objeto a una cierta altura.
+                        Así que en vez de elevar verticalmente al objeto una altura h, se le hace recorrer una distancia d sobre la superficie del plano inclinado. Entonces la superficie contribuye a equilibrar una parte del peso del objeto, concretamente la componente vertical del mismo.
+
                     </p>
                     <br>
                     <img src="img/plano_inclinado_home.png" alt="plano_inclinado" class="responsive-image">
@@ -21,8 +23,8 @@
                     <!-- Buttons for redirecting -->
                     <div class="row center">
                         <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/con_rozamiento.php">Plano inclinado con rozamiento</a><br><br>
-                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Plano inclinado sin rozamiento</a><br><br>
-                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Curva peraltada</a>
+                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/sin_rozamiento.php">Plano inclinado sin rozamiento</a><br><br>
+                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/curva_peraltada.php">Curva peraltada</a>
                     </div>
                 </div>
             </div>

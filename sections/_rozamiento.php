@@ -13,12 +13,11 @@
             <div class="col s8 offset-s2">
                 <div class="content" id="mainTopic">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus blanditiis cumque officiis, sed amet quisquam ducimus temporibus aliquam aspernatur culpa nostrum provident molestias sunt vero dolore fugiat! Deserunt facere dolore ut explicabo omnis quibusdam cumque eaque exercitationem eius rem assumenda eum, impedit amet laboriosam ad expedita, mollitia obcaecati porro sapiente hic quam, aliquam veniam. At expedita voluptas alias sequi deserunt in nobis, commodi obcaecati, deleniti fuga quos error reiciendis. Error cumque aliquam quisquam animi in ratione possimus similique impedit fugit harum, dolores ut autem quo quaerat laudantium, nostrum corrupti ab consectetur placeat tempora? Excepturi fugiat delectus id incidunt sit!
+                        Si se considera el rozamiento, se debe tener en cuenta que este se opone siempre al movimiento o al posible movimiento. Cuando el objeto se mueve sobre la superficie del plano inclinado actúa el roce cinético, si el objeto va de subida, el roce cinético fk se dirige en sentido opuesto y la fuerza F se tiene que encargar también de vencerlo.
                     </p>
                     <br>
-                    <img src="../img/plano_inclinado_home.png" alt="plano_inclinado" class="responsive-image">
+                    <img src="../img/rozamiento.png" alt="plano_inclinado" class="responsive-image">
                     <br>
-                    </div>
                 </div>
             </div>
         </div>
