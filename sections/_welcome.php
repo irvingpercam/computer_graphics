@@ -19,8 +19,8 @@
                     <img src="img/plano_inclinado_home.png" alt="plano_inclinado" class="responsive-image">
                     <br>
                     <!-- Buttons for redirecting -->
-                    <div class="row center">"
-                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Plano inclinado con rozamiento</a><br><br>
+                    <div class="row center">
+                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/con_rozamiento.php">Plano inclinado con rozamiento</a><br><br>
                         <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Plano inclinado sin rozamiento</a><br><br>
                         <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Curva peraltada</a>
                     </div>
