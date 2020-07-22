@@ -7,8 +7,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
-    <title>Lab 20 - Desarrollo de Aplicaciones Web</title>
-    <!-- LAB 20 CSS -->
+    <title>FisicApp - Gráficas Computacionales</title>
+    <!-- PROJECT CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
