@@ -21,7 +21,7 @@
                     <!-- Buttons for redirecting -->
                     <div class="row center">
                         <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/con_rozamiento.php">Plano inclinado con rozamiento</a><br><br>
-                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Plano inclinado sin rozamiento</a><br><br>
+                        <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="views/sin_rozamiento.php">Plano inclinado sin rozamiento</a><br><br>
                         <a class="waves-effect waves-light btn white indigo-text text-darken-4" href="">Curva peraltada</a>
                     </div>
                 </div>
