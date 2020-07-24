@@ -26,7 +26,7 @@
 <div class="navbar-fixed"> 
             <nav>
                 <div class="nav-wrapper indigo darken-4">
-                    <a href="index.php" class="brand-logo white-text" style="font-family:semravut;font-size:4vw">
+                    <a href="index.php" class="logo-text brand-logo white-text">
                         FisicApp
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
@@ -55,7 +55,7 @@
 <!-- START FOOTER -->
 <footer class="myFooter" id="preguntas">
     <div class="footer-copyright">
-        <div class="container white-text" style="font-family:Arial;font-size:1,5vw;">
+        <div class="footer-credits container white-text">
             ©Copyright <a class="indigo-text text-lighten-3" href="http://github.com/irvingpercam">Irving Aguilar</a>
             &
             <a class="indigo-text text-lighten-3" href="http://github.com/a01209519">Eduardo Guzmán</a>

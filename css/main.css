@@ -125,3 +125,18 @@ canvas {
   align-self: center;
   display: none;
 }
+
+.welcome {
+  font-family: hypertext;
+  font-size: 10vmax;
+}
+
+.logo-text {
+  font-family:semravut;
+  font-size: 10vmin !important;
+}
+
+.footer-credits {
+  font-family:Arial;
+  font-size:1,5vw;
+}

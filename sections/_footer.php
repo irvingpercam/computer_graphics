@@ -1,7 +1,7 @@
 <!-- Start Footer -->
 <footer class="myFooter" id="preguntas">
     <div class="footer-copyright">
-        <div class="container white-text" style="font-family:Arial;font-size:1,5vw;">
+        <div class="footer-credits container white-text">
             ©Copyright <a class="indigo-text text-lighten-3" href="http://github.com/irvingpercam">Irving Aguilar</a>
             &
             <a class="indigo-text text-lighten-3" href="http://github.com/a01209519">Eduardo Guzmán</a>
