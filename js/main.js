@@ -94,8 +94,10 @@ function main()
      * Declaring the cube
      */
     cube = new THREE.Mesh(new THREE.CubeGeometry(), new THREE.MeshStandardMaterial({color: "red"})); 
-    cube.position.set(2.7, 1, 1.5);
+    cube.position.set(1, 2.7, depth/2);
     cube.rotation.z = Math.PI / 4;
+    // cube.translateY(1);
+    // cube.translateX(2.6);
     cube.castShadow = true;
     cube.receiveShadow = true;
     // [END FORMS]
