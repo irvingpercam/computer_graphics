@@ -112,3 +112,31 @@ main {
   width: 100%;
   padding: 20px;
 }
+
+#container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  align-self: center;
+  display: none;
+}
+
+.welcome {
+  font-family: hypertext;
+  font-size: 10vmax;
+}
+
+.logo-text {
+  font-family:semravut;
+  font-size: 10vmin !important;
+}
+
+.footer-credits {
+  font-family:Arial;
+  font-size:1,5vw;
+}

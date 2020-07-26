@@ -2,7 +2,7 @@
 <div class="navbar-fixed"> 
             <nav>
                 <div class="nav-wrapper indigo darken-4">
-                    <a class="brand-logo white-text" style="font-family:semravut;font-size:4vw">
+                    <a class="logo-text brand-logo white-text">
                         FisicApp
                     </a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>

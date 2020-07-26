@@ -19,6 +19,18 @@
                     <br>
                     <img src="../img/sin_rozamiento.png" alt="plano_inclinado" class="responsive-image">
                     <br>
+                    <p>
+                        Ejercicio Resuelto: 
+<br>
+Un bloque de 2 kg asciende por un plano inclinado 30º sin rozamiento, debido a una fuerza de 15 N que tira de él.
+<br>
+a)  Hallar la aceleración con la que sube el bloque.
+
+                    </p>
+                    <img src="../img/ejercicio21.png" alt="plano_inclinado" >
+                    <img src="../img/ejercicio22.png" alt="plano_inclinado">
+                    <img src="../img/ejercicio23.png" alt="plano_inclinado">
+                    <img src="../img/ejercicio24.png" alt="plano_inclinado">
                 </div>
             </div>
         </div>

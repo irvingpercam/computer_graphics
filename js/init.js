@@ -36,3 +36,18 @@ function showMainTopic () {
         mainTopic.style.display = "none";
     }
 }
+
+function showSimulator() {
+    var simulatorBtn = document.getElementById("simulatorBtn");
+    var canvas = document.getElementById("canvas");
+    if (canvas.style.display == "inline-block") {
+        simulatorBtn.setAttribute("class", "waves-effect waves-light btn-small green accent-4")
+        simulatorBtn.innerHTML = "Ver Simulador";
+        canvas.style.display = "none";
+    }
+    else if(canvas.style.display != "inline-block") {
+        simulatorBtn.setAttribute("class", "waves-effect waves-light btn-small red darken-4")
+        simulatorBtn.innerHTML = "Cerrar Simulador";
+        main();
+    }
+}

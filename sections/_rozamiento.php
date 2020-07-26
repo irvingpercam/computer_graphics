@@ -1,6 +1,6 @@
 <!-- Start Welcome -->
 <div class="container">
-        <h4 class="white-text center" style="font-family:hypertext;font-size:8vw;">Plano inclinado con rozamiento</h4>
+        <h4 class="welcome white-text center">Plano inclinado con rozamiento</h4>
     </div>
         <br>
         <br>
@@ -18,6 +18,15 @@
                     <br>
                     <img src="../img/rozamiento.png" alt="plano_inclinado" class="responsive-image">
                     <br>
+                    <p>
+                    	Ejercicio Resuelto:
+<br>
+						Se quiere subir un cuerpo de masa m= 5 kg por un plano inclinado de ángulo de inclinación 30º y el coeficiente de rozamiento 0,2 mediante la aplicación de una fuerza paralela al plano inclinado F= 45 N.
+<br>
+						a)	Calcular la aceleración del cuerpo
+
+                    </p>
+                    <img src="../img/ejercicio1.png" width="825">
                 </div>
             </div>
         </div>
