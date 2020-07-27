@@ -1,6 +1,6 @@
 <!-- Start Welcome -->
 <div class="container">
-        <h4 class="white-text center" style="font-family:hypertext;font-size:8vw;">Plano inclinado con rozamiento</h4>
+        <h4 class="white-text center" style="font-family:hypertext;font-size:8vw;">Curva peraldata</h4>
     </div>
         <br>
         <br>

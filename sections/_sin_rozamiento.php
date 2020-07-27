@@ -1,6 +1,6 @@
 <!-- Start Welcome -->
 <div class="container">
-        <h4 class="white-text center" style="font-family:hypertext;font-size:8vw;">Plano inclinado con rozamiento</h4>
+        <h4 class="white-text center" style="font-family:hypertext;font-size:8vw;">Plano inclinado sin rozamiento</h4>
     </div>
         <br>
         <br>
@@ -31,6 +31,13 @@ a)  Hallar la aceleración con la que sube el bloque.
                     <img src="../img/ejercicio22.png" alt="plano_inclinado">
                     <img src="../img/ejercicio23.png" alt="plano_inclinado">
                     <img src="../img/ejercicio24.png" alt="plano_inclinado">
+                    <br>
+                    <div class="row center">
+                        <a class="waves-effect waves-light btn-small green accent-4" id="simulatorBtn" onclick="showSimulator()">Ver Simulador</a>
+                    </div>
+                    <div class="row center">
+                        <canvas id="canvas"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
