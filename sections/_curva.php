@@ -12,9 +12,6 @@
         <div class="row">
             <div class="col s8 offset-s2">
                 <div class="content" id="mainTopic">
-                    <p>
-                        Probando Probando Probando Probando Probando Probando Probando
-                    </p>
                     <br>
                     <img src="../img/curva.png" alt="plano_inclinado" class="responsive-image">
                     <br>
