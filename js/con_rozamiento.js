@@ -11,7 +11,10 @@ var PrismGeometry;
 var vectorA, vectorB, vectorC;
 var cubeAngle;
 var hipotenuse;
+var material;
 var modelHipotenuse;
+var rightTriangle;
+var guiControls;
 
 PrismGeometry = function ( vertices, height ) {
 
@@ -72,6 +75,49 @@ function main()
     camera.position.set(5., 4., 8.);           
     var controls = new THREE.OrbitControls(camera, canvas);
 
+    // ARROW HELPER
+    var direction = new THREE.Vector3(1.7, 1.7, 0);
+    var length = direction.length();
+    var uDirection = direction.normalize();
+    var origin = new THREE.Vector3(0.7, 3.0, 1.5);
+    var color = "blue";
+    var arrowHelper = new THREE.ArrowHelper(uDirection, origin, length, color);
+
+    // ARROW HELPER
+    var direction = new THREE.Vector3(-1.7, -1.7, 0);
+    var length = direction.length();
+    var uDirection = direction.normalize();
+    var origin = new THREE.Vector3(0.7, 3.0, 1.5);
+    var color = "green";
+    var arrowHelper2 = new THREE.ArrowHelper(uDirection, origin, length, color);
+
+    // ARROW HELPER
+    var direction = new THREE.Vector3(0., -2.0, 0);
+    var length = direction.length();
+    var uDirection = direction.normalize();
+    var origin = new THREE.Vector3(0.7, 3.0, 1.5);
+    var color = "red";
+    var arrowHelper3 = new THREE.ArrowHelper(uDirection, origin, length, color);
+
+     // ARROW HELPER
+    var direction = new THREE.Vector3(-1.7, 2.0, 0);
+    var length = direction.length();
+    var uDirection = direction.normalize();
+    var origin = new THREE.Vector3(0.7, 3.0, 1.5);
+    var color = "black";
+    var arrowHelper4 = new THREE.ArrowHelper(uDirection, origin, length, color);
+
+    // GUI
+    guiControls = { deltaThetaX: 0., 
+                    deltaThetaY: 0.,
+                    wireframe : false
+                  };
+    var datGui = new dat.GUI();
+    var sliderDeltaThetaX = datGui.add(guiControls, 'deltaThetaX').min(1.).max(4.).step(1.).name('X');
+    var sliderDeltaThetaY = datGui.add(guiControls, 'deltaThetaY').min(1.).max(4.).step(1.).name('Y');
+    var choice = datGui.add(guiControls, 'wireframe').name('Wireframe');
+    datGui.close();
+
  // [START FORMS]
     /**
      * Declaring the inclined plane and its vectors
@@ -86,9 +132,9 @@ function main()
     var depth = 3;                   
     var geometry = new PrismGeometry( [vectorA, vectorB, vectorC], depth ); 
 
-    var material = new THREE.MeshPhongMaterial( {color: 0x00b2fc, specular: 0x00ffff, shininess: 20 } );
+    material = new THREE.MeshPhongMaterial( {color: 0x00b2fc, specular: 0x00ffff, shininess: 20 } );
 
-    var rightTriangle = new THREE.Mesh( geometry, material );
+    rightTriangle = new THREE.Mesh( geometry, material );
 
     /**
      * Declaring the cube
@@ -130,9 +176,16 @@ function main()
     scene.add(ambientLight);
     scene.add(pointLight1);
     scene.add(pointLightHelper);
+    scene.add(arrowHelper);
+    scene.add(arrowHelper2);
+    scene.add(arrowHelper3);
+    scene.add(arrowHelper4);
                                
     // EVENT-HANDLERS
     window.addEventListener('resize', resizeWindowB, false);
+    sliderDeltaThetaX.onChange(sliderDeltaThetaXEventListener);
+    sliderDeltaThetaY.onChange(sliderDeltaThetaYEventListener);
+    choice.onChange(choiceOnChange);
     // ACTION
     requestAnimationFrame(renderLoop);           
 }
