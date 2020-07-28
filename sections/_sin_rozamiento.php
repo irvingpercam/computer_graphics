@@ -27,16 +27,18 @@ Un bloque de 2 kg asciende por un plano inclinado 30º sin rozamiento, debido a 
 a)  Hallar la aceleración con la que sube el bloque.
 
                     </p>
-                    <img src="../img/ejercicio21.png" alt="plano_inclinado" >
-                    <img src="../img/ejercicio22.png" alt="plano_inclinado">
-                    <img src="../img/ejercicio23.png" alt="plano_inclinado">
-                    <img src="../img/ejercicio24.png" alt="plano_inclinado">
+                    <div class="row center">
+                        <img src="../img/ejercicio21.png" alt="plano_inclinado" style="width: 30vw">
+                        <br>
+                        <img src="../img/ejercicio22.png" alt="plano_inclinado" style="width: 30vw">
+                        <br>
+                        <img src="../img/ejercicio23.png" alt="plano_inclinado" style="width: 30vw">
+                        <br>
+                        <img src="../img/ejercicio24.png" alt="plano_inclinado" style="width: 30vw">
+                    </div>
                     <br>
                     <div class="row center">
-                        <a class="waves-effect waves-light btn-small green accent-4" id="simulatorBtn" onclick="showSimulator()">Ver Simulador</a>
-                    </div>
-                    <div class="row center">
-                        <canvas id="canvas"></canvas>
+                        <a class="waves-effect waves-light btn-small green accent-4" id="simulatorBtn" onclick='window.open("simulador_sr.php");return false;'>Ver Simulador</a>
                     </div>
                 </div>
             </div>
