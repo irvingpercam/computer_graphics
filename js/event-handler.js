@@ -30,3 +30,26 @@ function keyDownEventListener(event)
 		multiview = !multiview;
 	}
 }
+function resizeWindowB(event)
+{   
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    engine.setSize(canvas.width, canvas.height);
+    camera.aspect = canvas.width / canvas.height;
+    camera.updateProjectionMatrix();  
+}
+function sliderDeltaThetaXEventListener()
+{
+    return guiControls.deltaThetaX;
+}
+
+ function sliderDeltaThetaYEventListener()
+ {
+    return guiControls.deltaThetaY;
+ }
+
+ function choiceOnChange(event)
+{
+    rightTriangle.material.wireframe = event;
+    cube.material.wireframe = event;
+}

@@ -18,7 +18,6 @@
         <script src="../js/lib/orbit-controls.js" type="text/javascript"></script>
         <script src="../js/lib/dat.gui.min.js" type="text/javascript"></script>
         <script src="../js/event-handler.js" type="text/javascript"></script>
-        <script src="../js/main.js" type="text/javascript"></script>
     <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- End Scripts -->

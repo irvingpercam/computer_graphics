@@ -3,9 +3,7 @@ var canvas;
 var engine;
 var scene;
 var cube;
-var cameraObserver;
-var cameraActive;
-var cameraHelper;
+var camera;
 var light;
 var multiview = false;
 var controlCameraActive;
@@ -43,37 +41,7 @@ function update()
 
 function renderLoop() 
 {
-    engine.setViewport(0, 0, window.innerWidth, window.innerHeight);
-    engine.clear();
-
-    if(!multiview)
-    {
-        // Camera Observer
-        cameraObserver.aspect = canvas.width / canvas.height;
-        cameraObserver.updateProjectionMatrix();
-        engine.setScissor(0, 0, window.innerWidth, window.innerHeight);
-        engine.render(scene, cameraObserver);
-    }
-    else
-    {
-        var w = window.innerWidth;
-        var h = window.innerHeight;
-        // OBSERVER CAMERA
-        cameraObserver.aspect = w/2. / h;
-        cameraObserver.updateProjectionMatrix();
-       
-        engine.setViewport(w/2., 0, w/2., h);
-        engine.setScissor(w/2., 0, w/2., h);
-
-        engine.render(scene, cameraObserver);
-
-        // ACTIVE CAMERA
-        cameraActive.aspect = w/2. / h;
-        cameraActive.updateProjectionMatrix();
-        engine.setViewport(0, 0, w/2., h);
-        engine.setScissor(0, 0, w/2., h);
-        engine.render(scene, cameraActive);
-    }
+    engine.render(scene, camera);
     update();
     requestAnimationFrame(renderLoop);
 }
@@ -84,11 +52,9 @@ function main()
     canvas = document.getElementById("canvas");
 
     // RENDERER ENGINE
-    engine = new THREE.WebGLRenderer({canvas: canvas});
+    engine = new THREE.WebGLRenderer({antialias: true, canvas: canvas});
     engine.setSize(window.innerWidth, window.innerHeight);
     engine.setClearColor(new THREE.Color(0.2, 0.2, 0.35), 1.);   
-    engine.setScissorTest(true);
-    engine.autoclear = false;  
 
     // SCENE
     scene = new THREE.Scene();
@@ -101,22 +67,10 @@ function main()
     var axesHelper = new THREE.AxesHelper(5);
     axesHelper.position.set(0., 0.01, 0.);
 
-    // OBSERVER CAMERA
-    cameraObserver = new THREE.PerspectiveCamera(60., canvas.width / canvas.height, 0.01, 10000.);  // CAMERA
-    cameraObserver.position.set(5., 5, 10.);
-    cameraObserver.lookAt(scene.position); 
-    cameraObserver.up.set(0., 1., 0.);  
-
-    // ACTIVE CAMERA
-    cameraActive = new THREE.PerspectiveCamera(60., 0.5*canvas.width / canvas.height, 1., 20.);  // CAMERA
-    controlCameraActive = new THREE.OrbitControls(cameraActive, canvas);
-    cameraActive.position.set(-2., 5., 5.); 
-    cameraActive.lookAt(scene.position);   
-    cameraActive.up.set(0., 1., 0.); 
-    controlCameraActive.update();    
-       
-    // CAMERA HELPER
-    cameraHelper = new THREE.CameraHelper(cameraActive);
+    // ORTOGRAPHIC CAMERA
+    camera = new THREE.PerspectiveCamera(60., canvas.width / canvas.height, 0.01, 10000.);  // CAMERA
+    camera.position.set(5., 4., 8.);           
+    var controls = new THREE.OrbitControls(camera, canvas);
 
  // [START FORMS]
     /**
@@ -139,10 +93,12 @@ function main()
     /**
      * Declaring the cube
      */
+    var texture = new THREE.TextureLoader().load("img/minecraft.jpg");
+    var tex = new THREE.MeshPhongMaterial({map: texture});
+    cube = new THREE.Mesh(new THREE.CubeGeometry(), tex); 
     hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     cubeAngle = Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
-    cube = new THREE.Mesh(new THREE.CubeGeometry(), new THREE.MeshStandardMaterial({color: "red"})); 
     cube.rotation.z = -cubeAngle;
     cube.position.set(.7,3,depth/2);
     // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
@@ -153,14 +109,14 @@ function main()
     //cube.translateY(vectorA.getComponent(1)-.5);
    //cube.rotation.z = -Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
     //cube.translateY(.32);
-    // cube.castShadow = true;
-    // cube.receiveShadow = true;
+    cube.castShadow = true;
+    cube.receiveShadow = true;
     // [END FORMS]
 
     // LIGHTS
     var ambientLight = new THREE.AmbientLight("white", 0.2);
     // POINTLIGHT 1
-    var pointLight1 = new THREE.PointLight("white", 5.);
+    var pointLight1 = new THREE.PointLight("white", 3.);
     var sphereSize = 0.1;
     var pointLightHelper = new THREE.PointLightHelper(pointLight1, sphereSize);
     pointLight1.position.set(0., vectorA.getComponent(1) * 2, 0.);
@@ -170,17 +126,13 @@ function main()
     scene.add(axesHelper);
     scene.add(rightTriangle);
     scene.add(cube); 
-    scene.add(cameraObserver); 
-    scene.add(cameraActive); 
-    scene.add(cameraHelper);
+    scene.add(camera); 
     scene.add(ambientLight);
     scene.add(pointLight1);
     scene.add(pointLightHelper);
                                
     // EVENT-HANDLERS
-    window.addEventListener('resize', resizeWindow, false);
-    document.addEventListener("keydown", keyDownEventListener, false);
-
+    window.addEventListener('resize', resizeWindowB, false);
     // ACTION
     requestAnimationFrame(renderLoop);           
 }
