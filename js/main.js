@@ -145,7 +145,7 @@ function main()
     hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     cubeAngle = Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
-    //cube.rotation.z = -cubeAngle;
+    cube.rotation.z = -cubeAngle;
     cube.position.set(.7,3,depth/2);
     // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
     // cube.translateX(2.6);
@@ -162,7 +162,7 @@ function main()
     // LIGHTS
     var ambientLight = new THREE.AmbientLight("white", 0.2);
     // POINTLIGHT 1
-    var pointLight1 = new THREE.PointLight("white", 5.);
+    var pointLight1 = new THREE.PointLight("white", 3.);
     var sphereSize = 0.1;
     var pointLightHelper = new THREE.PointLightHelper(pointLight1, sphereSize);
     pointLight1.position.set(0., vectorA.getComponent(1) * 2, 0.);
