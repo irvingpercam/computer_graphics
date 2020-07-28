@@ -84,7 +84,7 @@ function main()
     canvas = document.getElementById("canvas");
 
     // RENDERER ENGINE
-    engine = new THREE.WebGLRenderer({canvas: canvas});
+    engine = new THREE.WebGLRenderer({antialias: true, canvas: canvas});
     engine.setSize(window.innerWidth, window.innerHeight);
     engine.setClearColor(new THREE.Color(0.2, 0.2, 0.35), 1.);   
     engine.setScissorTest(true);
