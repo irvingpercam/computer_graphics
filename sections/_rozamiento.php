@@ -29,6 +29,9 @@
                     <div class="row center">
                         <img src="../img/ejercicio1.png" style="width: 40vw">
                     </div>
+                    <div class="row center">
+                        <a class="waves-effect waves-light btn-small green accent-4" id="simulatorBtn" onclick='window.open("simulador_r.php");return false;'>Ver Simulador</a>
+                    </div>
                 </div>
             </div>
         </div>
