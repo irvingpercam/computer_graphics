@@ -88,14 +88,14 @@ function main()
     var geometry = new PrismGeometry( [vectorA, vectorB, vectorC], depth ); 
 
     var material = new THREE.MeshPhongMaterial( {color: 0x00b2fc, specular: 0x00ffff, shininess: 20 } );
-    
+
     var rightTriangle = new THREE.Mesh( geometry, material );
 
     /**
      * Declaring the cube
      */
     var texture = new THREE.TextureLoader().load("img/mario.jpg");
-    var tex = new THREE.MeshBasicMaterial({map: texture});
+    var tex = new THREE.MeshPhongMaterial({map: texture});
     cube = new THREE.Mesh(new THREE.CubeGeometry(), tex); 
     cube.position.set(1, 2.7, depth/2);
     cube.rotation.z = Math.PI / 4;
