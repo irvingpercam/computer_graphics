@@ -140,3 +140,12 @@ canvas {
   font-family:Arial;
   font-size:1,5vw;
 }
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.photo {
+  width: 10vw;
+}

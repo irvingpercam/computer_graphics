@@ -155,8 +155,8 @@ function main()
     //cube.translateY(vectorA.getComponent(1)-.5);
    //cube.rotation.z = -Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
     //cube.translateY(.32);
-    // cube.castShadow = true;
-    // cube.receiveShadow = true;
+    cube.castShadow = true;
+    cube.receiveShadow = true;
     // [END FORMS]
 
     // LIGHTS
