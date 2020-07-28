@@ -15,7 +15,7 @@
                     <br>
                     <img src="../img/curva.png" alt="plano_inclinado" class="responsive-image">
                     <br>
-                    <p>Un vehículo circula sobre una curva peraltada de 60 m de radio. Suponiendo que no existe fuerza de rozamiento, ¿Cuál debe ser el ángulo de peralte, para que el vehículo pueda tomar la curva a 60 km/h sin derrapar?
+                    <p>Un vehículo circula sobre una curva peraltada de 60m de radio. Suponiendo que no existe fuerza de rozamiento, ¿Cuál debe ser el ángulo de peralte, para que el vehículo pueda tomar la curva a 60 km/h sin derrapar?
                     </p>
                     <img src="../img/curva1.png" alt="plano_inclinado">
                     <p>
