@@ -10,6 +10,7 @@
     <title>FisicApp - Gráficas Computacionales</title>
     <!-- PROJECT CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <link href="//db.onlinewebfonts.com/c/bd1f28c07b5011d83f845a216c19bc6b?family=Bayshore" rel="stylesheet" type="text/css"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Material Design Icons -->

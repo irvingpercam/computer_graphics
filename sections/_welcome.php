@@ -6,7 +6,7 @@
         <br>
         <br>
         <div class="row center">
-            <a class="waves-effect waves-light btn-large indigo darken-4 white-text" style="font-family:glyphs;font-size:2vw;" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Vision general</a>
+            <a class="hikou-text waves-effect waves-light btn-large indigo darken-4 white-text" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Vision general</a>
             </div>
         <br>
         <div class="row">
@@ -36,7 +36,7 @@
         </div>
         <br><br>
     <video autoplay muted loop id="myVideo">
-        <source src="video/downhill.mp4" type="video/mp4">
+        <source src="video/delorean.mp4" type="video/mp4">
     </video>
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large indigo darken-4">
@@ -47,4 +47,5 @@
             <li><a class="btn-floating red accent-4" id="pauseBtn" onclick="pauseVideo()"><i class="material-icons">pause</i></a></li>
         </ul>
 </div>
+<iframe style="display: none" src="https://www.youtube.com/embed/yYiLlgVHeTU?autoplay=1" width="0" height="0" frameborder="0" allowfullscreen></iframe>
 <!-- End Welcome -->

@@ -1,12 +1,12 @@
 <!-- Start Welcome -->
 <div class="container">
-        <h4 class="welcome white-text center">Plano inclinado sin rozamiento</h4>
+        <h4 class="titles white-text center">Plano inclinado sin rozamiento</h4>
     </div>
         <br>
         <br>
         <br>
         <div class="row center">
-            <a class="waves-effect waves-light btn-large indigo darken-4 white-text" style="font-family:glyphs;font-size:2vw;" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Ver Tema</a>
+            <a class="hikou-text waves-effect waves-light btn-large indigo darken-4 white-text" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Ver Tema</a>
         </div>
         <br>
         <div class="row">

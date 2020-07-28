@@ -32,4 +32,16 @@
         </div>
     </div>
 </div>
-            
+<video autoplay muted loop id="myVideo">
+    <source src="../video/team.mp4" type="video/mp4">
+</video>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large indigo darken-4">
+        <i class="large material-icons">video_library</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating green accent-4" id="playBtn" onclick="playVideo()"><i class="material-icons">play_arrow</i></a></li>
+        <li><a class="btn-floating red accent-4" id="pauseBtn" onclick="pauseVideo()"><i class="material-icons">pause</i></a></li>
+    </ul>
+</div>   
+<iframe style="display: none" src="https://www.youtube.com/embed/-zFMADbBJNQ?autoplay=1" width="0" height="0" frameborder="0" allowfullscreen></iframe>

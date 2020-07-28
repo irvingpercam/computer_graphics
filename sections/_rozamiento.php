@@ -1,12 +1,12 @@
 <!-- Start Welcome -->
 <div class="container">
-        <h4 class="welcome white-text center">Plano inclinado con rozamiento</h4>
+        <h4 class="titles white-text center">Plano inclinado con rozamiento</h4>
     </div>
         <br>
         <br>
         <br>
         <div class="row center">
-            <a class="waves-effect waves-light btn-large indigo darken-4 white-text" style="font-family:glyphs;font-size:2vw;" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Ver Tema</a>
+            <a class="hikou-text waves-effect waves-light btn-large indigo darken-4 white-text" onclick="showMainTopic()"><i class="material-icons left white-text">assignment</i>Ver Tema</a>
         </div>
         <br>
         <div class="row">
@@ -30,12 +30,24 @@
                         <img src="../img/ejercicio1.png" style="width: 40vw">
                     </div>
                     <div class="row center">
-                        <a class="waves-effect waves-light btn-small green accent-4" id="simulatorBtn" onclick='window.open("simulador_r.php");return false;'>Ver Simulador</a>
+                        <a class="hikou-text waves-effect waves-light btn indigo darken-4" id="simulatorBtn" onclick='window.open("simulador_r.php");return false;'>Ver Simulador</a>
                     </div>
                 </div>
             </div>
         </div>
         <br><br>
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/vapor.mp4" type="video/mp4">
+        </video>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large indigo darken-4">
+                <i class="large material-icons">video_library</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating green accent-4" id="playBtn" onclick="playVideo()"><i class="material-icons">play_arrow</i></a></li>
+                <li><a class="btn-floating red accent-4" id="pauseBtn" onclick="pauseVideo()"><i class="material-icons">pause</i></a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <script src="../js/con_rozamiento.js" type="text/javascript"></script>

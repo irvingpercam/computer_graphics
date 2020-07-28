@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/bd1f28c07b5011d83f845a216c19bc6b?family=Bayshore);
 @font-face {
     font-family: cobra;
     src: url(../font/deadstock.ttf);
@@ -34,6 +35,19 @@
   font-family: zambajoun;
   src: url(../font/zambajoun.ttf);
 }
+@font-face {
+  font-family: hikou;
+  src: url(../font/hikou.otf);
+}
+@font-face {
+  font-family: cyber;
+  src: url(../font/cyberthrone.ttf);
+}
+@font-face {
+  font-family: fox;
+  src: url(../font/fox.ttf);
+}
+@font-face {font-family: "Bayshore"; src: url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.eot"); src: url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bd1f28c07b5011d83f845a216c19bc6b.svg#Bayshore") format("svg"); }
 .myFooter {
   position:fixed;
   bottom:0;
@@ -125,15 +139,47 @@ canvas {
   align-self: center;
   display: none;
 }
-
+.hikou-text {
+  font-family:hikou;
+  font-size:3vw !important;
+  -webkit-animation: welcome 1s ease-in-out infinite alternate;
+  -moz-animation: welcome 1s ease-in-out infinite alternate;
+  animation: welcome 1s ease-in-out infinite alternate;
+}
 .welcome {
-  font-family: hypertext;
-  font-size: 10vmax;
+  font-family: Bayshore;
+  font-size: 15vmax;
+  text-align: center;
+  -webkit-animation: welcome 1s ease-in-out infinite alternate;
+  -moz-animation: welcome 1s ease-in-out infinite alternate;
+  animation: welcome 1s ease-in-out infinite alternate;
 }
 
+.titles {
+  font-family: cyber;
+  font-size: 10vmax;
+  text-align: center;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: black;
+  -webkit-animation: welcome 1s ease-in-out infinite alternate;
+  -moz-animation: welcome 1s ease-in-out infinite alternate;
+  animation: welcome 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes welcome {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 .logo-text {
-  font-family:semravut;
-  font-size: 10vmin !important;
+  font-family:hikou;
+  font-size: 8vmin !important;
+  -webkit-animation: welcome 1s ease-in-out infinite alternate;
+  -moz-animation: welcome 1s ease-in-out infinite alternate;
+  animation: welcome 1s ease-in-out infinite alternate;
 }
 
 .footer-credits {
