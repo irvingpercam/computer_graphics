@@ -10,13 +10,16 @@ var light;
 var multiview = false;
 var controlCameraActive;
 var PrismGeometry;
-var vectorA, vectorB, vectorC;
+var vectorA = new THREE.Vector2( 0, 3 ); // HEIGHT Y-AXIS - OPPOSITE CATHETUS
+var vectorB = new THREE.Vector2( 0, 0 ); // ORIGIN
+var vectorC = new THREE.Vector2( 3, 0 ); // WIDTH X-AXIS - ADJACENT CATHETUS
 var cubeAngle;
 var hipotenuse;
 var modelHipotenuse;
 var guiControls;
 var material;
 var rightTriangle;
+var pivot;
 
 PrismGeometry = function ( vertices, height ) {
 
@@ -163,10 +166,6 @@ function main()
     // PRISM
     PrismGeometry.prototype = Object.create(THREE.ExtrudeGeometry.prototype);
 
-    vectorA = new THREE.Vector2( 0, 3 ); // HEIGHT Y-AXIS - OPPOSITE CATHETUS
-    vectorB = new THREE.Vector2( 0, 0 ); // ORIGIN
-    vectorC = new THREE.Vector2( 3, 0 ); // WIDTH X-AXIS - ADJACENT CATHETUS
-
     var depth = 3;                   
     var geometry = new PrismGeometry( [vectorA, vectorB, vectorC], depth ); 
 
@@ -177,15 +176,19 @@ function main()
     /**
      * Declaring the cube
      */
+    // var axisR = new THREE.Vector3(0, 0, ).normalize();
     var texture = new THREE.TextureLoader().load("img/mario.jpg");
     var tex = new THREE.MeshPhongMaterial({map: texture});
     cube = new THREE.Mesh(new THREE.CubeGeometry(), tex); 
-    hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
-    modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
+    // hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
+    // modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
+    // pivot = new THREE.Object3D();
+    // pivot.position.set(0.5, 3.5, depth/2);
     cubeAngle = Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
+    cube.position.set(0.7,vectorA.getComponent(1),depth/2);    // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
     cube.rotation.z = -cubeAngle;
-    cube.position.set(.7,3,depth/2);
-    // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
+    // pivot.add(cube);
+    // pivot.rotateOnAxis(axisR, cubeAngle);
     // cube.translateX(2.6);
     //cube.position.set(0.5, 0.5, depth/2);
     // cube.translateY(vectorA.getComponent(1) - .5);
