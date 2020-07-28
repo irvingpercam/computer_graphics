@@ -139,10 +139,12 @@ function main()
     /**
      * Declaring the cube
      */
+    var texture = new THREE.TextureLoader().load("img/mario.jpg");
+    var tex = new THREE.MeshPhongMaterial({map: texture});
+    cube = new THREE.Mesh(new THREE.CubeGeometry(), tex); 
     hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     cubeAngle = Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
-    cube = new THREE.Mesh(new THREE.CubeGeometry(), new THREE.MeshStandardMaterial({color: "red"})); 
     //cube.rotation.z = -cubeAngle;
     cube.position.set(.7,3,depth/2);
     // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
