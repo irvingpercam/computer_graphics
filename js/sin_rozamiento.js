@@ -183,10 +183,6 @@ function main()
     hipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     modelHipotenuse = Math.sqrt(Math.pow(vectorA.getComponent(1), 2) * Math.pow(vectorC.getComponent(0), 2));
     cubeAngle = Math.atan(vectorA.getComponent(1)/vectorC.getComponent(0));
-<<<<<<< HEAD:js/main.js
-    cube = new THREE.Mesh(new THREE.CubeGeometry(), new THREE.MeshStandardMaterial({color: "red"})); 
-=======
->>>>>>> be80b3b6f0fe4b049ae4fea52290c6608686962c:js/sin_rozamiento.js
     cube.rotation.z = -cubeAngle;
     cube.position.set(.7,3,depth/2);
     // NOTE: In order to move the cube based on the rotation angle given, we need to translate in the y-axis
