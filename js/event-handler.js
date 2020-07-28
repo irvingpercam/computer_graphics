@@ -30,3 +30,19 @@ function keyDownEventListener(event)
 		multiview = !multiview;
 	}
 }
+
+function sliderDeltaThetaXEventListener()
+{
+    return guiControls.deltaThetaX;
+}
+
+ function sliderDeltaThetaYEventListener()
+ {
+    return guiControls.deltaThetaY;
+ }
+
+ function choiceOnChange(event)
+{
+    rightTriangle.material.wireframe = event;
+    cube.material.wireframe = event;
+}
