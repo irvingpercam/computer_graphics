@@ -5,7 +5,7 @@
             ©Copyright <a class="indigo-text text-lighten-3" href="http://github.com/irvingpercam">Irving Aguilar</a>
             &
             <a class="indigo-text text-lighten-3" href="http://github.com/a01209519">Eduardo Guzmán</a>
-            - Powered by Tecnológico de Monterrey.
+            - Powered by Tecnológico de Monterrey CQ.
         </div>
     </div>
 </footer>
